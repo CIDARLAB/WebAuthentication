@@ -3,8 +3,8 @@
   <groupId>org.cidarlab</groupId>
   <artifactId>WebAuthentication</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-<!--  <packaging>war</packaging> -->  
-  <packaging>jar</packaging>
+  <packaging>war</packaging>
+  
   <build>
     <plugins>
       <plugin>
@@ -38,6 +38,7 @@
       
     </plugins>
   </build>
+  
   
   <dependencies>
   
