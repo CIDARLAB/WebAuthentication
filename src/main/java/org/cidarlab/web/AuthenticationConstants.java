@@ -18,4 +18,6 @@ public class AuthenticationConstants {
 	public static final String SIGNUP = "signup";
 	public static final String LOGIN = "login";
 	public static final String LOGOUT = "logout";
+	
+	public static final String USER_COOKIE = "user";
 }
