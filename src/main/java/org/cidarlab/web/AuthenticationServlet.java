@@ -182,7 +182,7 @@ public class AuthenticationServlet
      */
     private void eraseUserCookie(HttpServletRequest request, HttpServletResponse response) {
         Cookie[] cookies = request.getCookies();
-        if (cookies != null)
+        if (cookies != null) {
             for (int i = 0; i < cookies.length; i++) {
             	if(AuthenticationConstants.USER_COOKIE.equals(cookies[i].getName())) {
 	                cookies[i].setValue("");
@@ -191,7 +191,10 @@ public class AuthenticationServlet
 	                response.addCookie(cookies[i]);
             	}
             }
-    }    
+        }
+    }
+    
+    
     private void login(HttpServletRequest request, HttpServletResponse response, String user) {
 
 		/*-------------------------------
